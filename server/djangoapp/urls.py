@@ -10,16 +10,20 @@ urlpatterns = [
     # name the URL
 
     # path for about view
-
+    path(route='', view=views.get_dealerships, name='index'),
+    #week 1 T4
+    path(route='about', view=views.about, name='about'),
     # path for contact us view
+    path(route='contact', view=views.contact, name='contact'),
 
     # path for registration
 
-    # path for login
+    #week 2 t 5
+    path(route='login/', view=views.login_request, name='login'),
 
     # path for logout
-
-    path(route='', view=views.get_dealerships, name='index'),
+    #week 2 t 5
+    path(route='logout/', view=views.logout_request, name='logout'),ath for logout
 
     # path for dealer reviews view
 
